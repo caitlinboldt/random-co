@@ -80,6 +80,8 @@ export default {
     padding: 10px;
 }
 #form button:hover {
+    background-color: #AB6174;
+    color: whitesmoke;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     cursor: pointer;
 }
