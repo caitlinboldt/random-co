@@ -17,7 +17,7 @@
       </form>
     </div>
     <div id="success" style="display: none">
-      <h2>Your registration imformation has been recieved successfully. Thank you!</h2>
+      <h2>Your registration information has been recieved successfully. Thank you!</h2>
     </div>
   </div>
 </template>
