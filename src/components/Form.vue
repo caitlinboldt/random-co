@@ -1,7 +1,8 @@
 <template>
-  <div class="hello">
+  <div>
     <div id="form" style="display: none">
       <form @submit.prevent="submitForm">
+        <h2>Registration Form</h2>
         <p>First name:</p>
         <input type="text" name="firstname" v-model="firstname" v-validate="'alpha'">
         <p class="alert" v-if="errors.has('firstname')"> {{errors.first('firstname') }} </p>
@@ -14,6 +15,9 @@
         <br>
         <button id="btn" type="submit">Submit</button>
       </form>
+    </div>
+    <div id="success" style="display: none">
+      <h2>Your registration imformation has been recieved successfully. Thank you!</h2>
     </div>
   </div>
 </template>
@@ -41,7 +45,9 @@ export default {
     submitForm() {
       this.$validator.validateAll().then((result) => {
         if(result) {
-          this.sendRequest(); 
+          this.sendRequest();
+          document.getElementById('form').style.display = 'none';
+          document.getElementById('success').style.display = '';
         } else {
           console.log("Not valid");
         }
@@ -76,5 +82,8 @@ export default {
 #form button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     cursor: pointer;
+}
+#success {
+    text-align: center;
 }
 </style>
