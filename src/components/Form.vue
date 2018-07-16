@@ -60,9 +60,11 @@ export default {
 
 <style scoped>
 #form {
-    margin: 50px;
+    background-color: lightgrey;
+    margin: 50px 300px;
     padding: 50px;
-    text-align: center;
+    text-align: left;
+    width: 25%;
 }
 #form p {
     font-size: 20px;
@@ -73,7 +75,7 @@ export default {
 #form input {
     margin: 5px;
     padding: 3px;
-    width: 230px;
+    width: 90%;
 }
 #form button {
     font-size: 16px;
@@ -92,12 +94,20 @@ export default {
 #fail {
   color: red;
 }
-
-@media (max-width: 680px) {
+@media (max-width: 700px) {
+    #form {
+        background-color: lightgrey;
+        margin: 50px;
+        padding: 50px;
+        text-align: left;
+        width: 50%;
+    }
+}
+@media (max-width: 485px) {
     #form input {
-        margin: 5px;
-        padding: 3px;
-        width: 150px;
+        margin: 3px;
+        padding: 2px;
+        width: 200px;
     }
 }
 </style>
