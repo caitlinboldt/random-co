@@ -20,6 +20,7 @@
     <div id="success" style="display: none">
       <h2>Your registration information has been recieved successfully. Thank you!</h2>
     </div>
+    <a style="visibility:hidden" href="https://helios-request-bin.herokuapp.com/">Get new Url</a>
   </div>
 </template>
 
