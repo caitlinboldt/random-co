@@ -60,4 +60,34 @@ body {
     margin: 50px 100px;
     width: 900px;
 }
+
+@media (max-width: 1070px) {
+    #main img {
+        height: 400px;
+        margin: 50px 100px;
+        width: 700px;
+    }
+}
+@media (max-width: 870px) {
+    #main img {
+        height: 350px;
+        margin: 50px 100px;
+        width: 500px;
+    }
+}
+@media (max-width: 680px) {
+    #main img {
+        height: 300px;
+        margin: 25px 50px;
+        width: 400px;
+    }
+}
+@media (max-width: 485px) {
+    #main img {
+        height: 250px;
+        margin: 10px 20px;
+        width: 300px;
+    }
+}
+
 </style>
