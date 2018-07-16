@@ -14,6 +14,7 @@
         <p class="alert" v-if="errors.has('email')"> {{errors.first('email') }} </p>
         <br>
         <button id="btn" type="submit">Submit</button>
+        <p id="fail"></p>
       </form>
     </div>
     <div id="success" style="display: none">
@@ -49,7 +50,7 @@ export default {
           document.getElementById('form').style.display = 'none';
           document.getElementById('success').style.display = '';
         } else {
-          console.log("Not valid");
+          document.getElementById('fail').innerHTML = 'Registration incomplete. Please properly fill out the entire form.';
         }
       })
     }
@@ -87,6 +88,9 @@ export default {
 }
 #success {
     text-align: center;
+}
+#fail {
+  color: red;
 }
 
 @media (max-width: 680px) {
